@@ -1,0 +1,109 @@
+html, body{
+    width: 100%;
+    height: 99%;
+}
+
+.card-perso{
+    /* background-image: url("img/fondyugioh.png");
+    background-repeat: no-repeat;*/
+    position: relative;
+    width: 24rem;
+    height: 32rem;
+    border: 0.5rem solid rgb(100, 100, 100);
+    background-color: #d9b363;
+    /* -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s; */
+}
+
+/* .card-perso:hover {
+    transform:scale(1.1);
+} */
+
+.card-weapon{
+    /* background-image: url("img/fondyugioh.png");
+    background-repeat: no-repeat;*/
+    position: relative;
+    width: 24rem;
+    height: 32rem;
+    border: 0.5rem solid rgb(100, 100, 100);
+    background-color: #3fab77;
+    /* -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s; */
+}
+
+/* .card-weapon:hover {
+    transform:scale(1.1);
+} */
+
+#title{
+    background-color: rgba(0, 0, 0, 0);
+    border: rgba(0, 0, 0, 0);
+    border-radius: 0.1em;
+    box-shadow: 3px 3px 4px #755733, -3px -3px 5px #c1a96c ;
+    width: 90%;
+    margin: 1rem;
+    padding: 0.3rem;
+    font-size: 16px;
+}
+
+.star-card{
+    position: absolute;
+    display: flex;
+    right: 1rem;
+    /* flex-direction: row; */
+    /* justify-content: flex-end;
+    /* box-sizing: content-box;
+    width: fit-content;
+    object-fit:contain; */
+}
+
+i.fas {
+    position: relative;
+    /* display: flex; */
+    justify-content: space-between;
+    /* width: 1.1rem; */
+    border: 2px solid #c23824;
+    /* border-right-color: rgb(70, 0, 0); */
+    /* border-top-color: rgb(70, 0, 0); */
+    background-color: #c23824;
+    border-radius: 1.1rem;
+    font-size: 0.85rem;
+    color: #d8dd4b;
+    box-shadow: -3px 0px 2px black inset;
+}
+
+.photo-container{
+    margin-top: 2.7rem;
+    /* width : 25rem;
+    height: 45rem; */
+}
+
+.photo-card{
+    position: relative;
+    object-fit: cover;
+    width: 80%;
+    height: 40%;
+    margin-left: 10%;
+    border-bottom: 0.3rem solid rgb(75, 75, 75);
+    border-right: 0.3rem solid rgb(75, 75, 75);
+    border-left: 0.3rem solid rgb(51, 51, 51);
+    border-top: 0.3rem solid rgb(51, 51, 51);
+}
+
+.stat-container{
+    position: absolute;
+    top: 25rem;
+    left: 3rem;
+}
+
+.footer{
+    position: relative;
+    display: flex;
+    align-content: flex-end;
+}
