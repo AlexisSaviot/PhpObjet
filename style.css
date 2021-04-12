@@ -10,14 +10,37 @@ html, body{
     width: 24rem;
     height: 32rem;
     border: 0.5rem solid rgb(100, 100, 100);
-    background-color: #d9b363;
     /* -webkit-transition: all 0.2s;
     -moz-transition: all 0.2s;
     -ms-transition: all 0.2s;
     -o-transition: all 0.2s;
     transition: all 0.2s; */
+    /* perspective: 1000px; */
 }
-
+.box{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.4s;
+    transform-style: preserve-3d;
+}
+.card-perso:hover .box {
+transform: rotateY(180deg);
+}
+.card-front, .card-back {
+position: absolute;
+width: 100%;
+height: 100%;
+backface-visibility: hidden;
+}
+.card-front{
+    
+    background-color: #d9b363;
+}
+.card-back {
+transform: rotateY(180deg);
+background-color: #d9b363;
+}
 /* .card-perso:hover {
     transform:scale(1.1);
 } */

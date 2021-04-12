@@ -15,16 +15,20 @@
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
             </div>
-            <div class="photo-container">
-                <img class="photo-card" src="./img/unnamed.jpg" alt="photo de <?php echo $character->getName()?>">
-            </div>
-            <div class="stat-container">
-                <p>
-                    <span id="life"><?php echo $character->getLife()?> HP</span>
-                    <span id="strength"><?php echo $character->getStrength()?> STRENGTH</span>
-                    <span id="magie"><?php echo $character->getMagic()?> MAGIC</span>
-                </p>
-                Arme : <a href="singlewp.php?id=<?php echo $weapon['ID'] ?>"><?php echo $weapon['name']?></a>
+            <div class="box">
+                <div class="card-front">
+                    <div class="photo-container">
+                        <img class="photo-card" src="./img/unnamed.jpg" alt="photo de <?php echo $character->getName()?>">
+                    </div>
+                </div>
+                <div class="card-back">
+                    <p>
+                        <span id="life"><?php echo $character->getLife()?> HP</span>
+                        <span id="strength"><?php echo $character->getStrength()?> STRENGTH</span>
+                        <span id="magie"><?php echo $character->getMagic()?> MAGIC</span>
+                    </p>
+                    Arme : <a href="singlewp.php?id=<?php echo $weapon['ID'] ?>"><?php echo($weapon['name']) ?></a>
+                </div>
             </div>
         </div>
     </div>
